@@ -1,0 +1,31 @@
+OPERATEUR,Adresse,Code postal,TYPE,geo_shape,geo_point_2d,
+"Association du jardin partagé ""Le lapin ouvrier""",69 rue Raymond Losserand,75014,ESPACE_PUBLIC,"{""coordinates"": [2.318824999844427, 48.834235999716746], ""type"": ""Point""}",48.8342359997, 2.31882499984
+Régie de quartier 14e,Jardinière du croisement Tombe Issoire - Père Corentin,75014,ESPACE_PUBLIC,"{""coordinates"": [2.332046999417218, 48.82695700020966], ""type"": ""Point""}",48.8269570002, 2.33204699942
+Association du Compost des Suisses,rue des Suisses,75014,ESPACE_PUBLIC,"{""coordinates"": [2.314279999424409, 48.83127600036655], ""type"": ""Point""}",48.8312760004, 2.31427999942
+"Association du jardin partagé ""Le nid de l'ortolan""",15 rue Saint-Médard,75005,ESPACE_PUBLIC,"{""coordinates"": [2.350420999722725, 48.843421999756025], ""type"": ""Point""}",48.8434219998, 2.35042099972
+"Association Espaces du jardin partagé ""Hérold""",11 rue Francis-Ponge,75019,ESPACE_PUBLIC,"{""coordinates"": [2.394901999409051, 48.88254599990799], ""type"": ""Point""}",48.8825459999, 2.39490199941
+Association Verger urbain,40 rue Le Vau,75020,ESPACE_PUBLIC,"{""coordinates"": [2.411199999517166, 48.87058899992104], ""type"": ""Point""}",48.8705889999, 2.41119999952
+"Association du jardin partagé ""au p'tit vertbois""",5 rue Vaucansson,75003,ESPACE_PUBLIC,"{""coordinates"": [2.356568999749478, 48.866962000357624], ""type"": ""Point""}",48.8669620004, 2.35656899975
+Association Veni Verdi,24 rue Le Vau,75020,ESPACE_PUBLIC,"{""coordinates"": [2.411163000285011, 48.86888600037282], ""type"": ""Point""}",48.8688860004, 2.41116300029
+"Association ""Compost'a Paris""",181 avenue Daumesnil,75012,ESPACE_PUBLIC,"{""coordinates"": [2.392371999785877, 48.84075900021479], ""type"": ""Point""}",48.8407590002, 2.39237199979
+Association Les fermiers de la Francilienne,16 rue de Jessaint,75018,ESPACE_PUBLIC,"{""coordinates"": [2.3561709995992652, 48.88529999981112], ""type"": ""Point""}",48.8852999998, 2.3561709996
+"Association du jardin partagé ""Cité industrielle""",31 rue de la Cité Industrielle,75011,ESPACE_PUBLIC,"{""coordinates"": [2.380195000634442, 48.85937600043597], ""type"": ""Point""}",48.8593760004, 2.38019500063
+Association Espaces,32 boulevard Lannes,75016,ESPACE_PUBLIC,"{""coordinates"": [2.2717719999181583, 48.86734500023441], ""type"": ""Point""}",48.8673450002, 2.27177199992
+"Association du jardin partagé ""des coopains""",36 rue Gilbert Cesbron,75017,ESPACE_PUBLIC,"{""coordinates"": [2.312191999402127, 48.8932080003108], ""type"": ""Point""}",48.8932080003, 2.3121919994
+"Association du jardin partagé ""Bel-Air""",21 rue Rottembourg,75012,ESPACE_PUBLIC,"{""coordinates"": [2.406701999878334, 48.83943399957959], ""type"": ""Point""}",48.8394339996, 2.40670199988
+"Association ""Compost 13""",22 rue Pierre Gourdault,75013,ESPACE_PUBLIC,"{""coordinates"": [2.370204999410983, 48.83174499980803], ""type"": ""Point""}",48.8317449998, 2.37020499941
+Association du jardin partagé des Rosiers,10 rue des Rosiers,75004,ESPACE_PUBLIC,"{""coordinates"": [2.360111000367767, 48.856952000112855], ""type"": ""Point""}",48.8569520001, 2.36011100037
+Association du jardin partagé,21 rue des Blancs Manteaux,75004,ESPACE_PUBLIC,"{""coordinates"": [2.356778000322773, 48.85902299968916], ""type"": ""Point""}",48.8590229997, 2.35677800032
+Conseil de quartier Mouton-Duvernet,20 rue Saillard,75013,ESPACE_PUBLIC,"{""coordinates"": [2.326134999671635, 48.83195599980611], ""type"": ""Point""}",48.8319559998, 2.32613499967
+Association Aurore,51 boulevard Exelmans,75016,ESPACE_PUBLIC,"{""coordinates"": [2.261887000390336, 48.842110000360584], ""type"": ""Point""}",48.8421100004, 2.26188700039
+"Association jardin partagé ""Ecobox""",Impasse de la Chapelle,75018,ESPACE_PUBLIC,"{""coordinates"": [2.358604000289811, 48.89271999981571], ""type"": ""Point""}",48.8927199998, 2.35860400029
+Régie de Quartier du 19ème,24 rue Bernard Têtu,75019,ESPACE_PUBLIC,"{""coordinates"": [2.377508000256388, 48.89618300030441], ""type"": ""Point""}",48.8961830003, 2.37750800026
+"Association du jardin partagé ""Casque d'or""",41-43 rue des Haies,75020,ESPACE_PUBLIC,"{""coordinates"": [2.401575999798379, 48.853527999793805], ""type"": ""Point""}",48.8535279998, 2.4015759998
+"Association les parques du jardin partagé ""des tours au jardin""",Face au 23 Villa d'Este,75013,ESPACE_PUBLIC,"{""coordinates"": [2.365862000559973, 48.82238699971115], ""type"": ""Point""}",48.8223869997, 2.36586200056
+"Association du jardin partagé ""le bois Dormoy""",2 bis cité de la Chapelle,75018,ESPACE_PUBLIC,"{""coordinates"": [2.35899799998526, 48.88740099984741], ""type"": ""Point""}",48.8874009998, 2.35899799999
+"Association du jardin partagé ""Perlinpinpin""",32 rue Bernard Buffet,75017,ESPACE_PUBLIC,"{""coordinates"": [2.314869000345687, 48.891504000341435], ""type"": ""Point""}",48.8915040003, 2.31486900035
+Régie de quartier 14e,8 place Denfert-Rochereau,75014,ESPACE_PUBLIC,"{""coordinates"": [2.33021200042777, 48.83497099981287], ""type"": ""Point""}",48.8349709998, 2.33021200043
+Régie de quartier 14e,55 avenue de l'Observatoire,75014,ESPACE_PUBLIC,"{""coordinates"": [2.336673999629144, 48.83766900022411], ""type"": ""Point""}",48.8376690002, 2.33667399963
+Régie de quartier 14e,9-11 avenue René Cotty,75014,ESPACE_PUBLIC,"{""coordinates"": [2.333917000200147, 48.83113899991487], ""type"": ""Point""}",48.8311389999, 2.3339170002
+"Association Les Chemins Verts, du jardin partagé ""Jules Vernes""",19 rue de l'Orillon,75011,ESPACE_PUBLIC,"{""coordinates"": [2.375250000418222, 48.8699460000724], ""type"": ""Point""}",48.8699460001, 2.37525000042
+Conseil de quartier Pernety,3 rue Raymond Losserand,75014,ESPACE_PUBLIC,"{""coordinates"": [2.322257000449381, 48.83662000016001], ""type"": ""Point""}",48.8366200002, 2.32225700045
