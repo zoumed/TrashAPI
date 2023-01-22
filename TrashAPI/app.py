@@ -5,13 +5,13 @@ from keras.models import load_model
 import cv2
 from flask_cors import cross_origin , CORS
 import pandas as pd
-
+import tensorflow as tf
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-loaded_model = load_model('best_weights.hdf5')
+loaded_model = tf.keras.models.load_model('best_weights.hdf5')
 
 
 COUNT = 0
