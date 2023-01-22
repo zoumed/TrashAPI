@@ -59,7 +59,6 @@ parso==0.8.3
 peewee==3.15.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pycairo==1.20.1
 pycups==2.0.1
 pydot==1.4.2
 Pygments==2.13.0
