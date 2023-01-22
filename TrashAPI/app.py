@@ -11,7 +11,7 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-loaded_model = load_model('./best_weights.hdf5')
+loaded_model = load_model('best_weights.hdf5')
 
 
 COUNT = 0
@@ -23,9 +23,10 @@ def main():
 
 
 
-DATASET_COMPOSTABLE = "./DATASET_TRASH/dataset_compostable.csv"
-DATASET_RECYCLABLE = "./DATASET_TRASH/dataset_recyclable.csv"
+DATASET_COMPOSTABLE = "DATASET_TRASH/dataset_compostable.csv"
+DATASET_RECYCLABLE = "DATASET_TRASH/dataset_recyclable.csv"
 
+# Tri
 @app.route('/tri', methods=['POST','GET'])
 @cross_origin()
 def home():
