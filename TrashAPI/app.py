@@ -38,12 +38,6 @@ app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 1
 def main():
     return render_template('index.html')
 
-from flask import send_from_directory
-
-@app.route("/swagger.json")
-def serve_swagger_file():
-    return send_from_directory("/home/mohammed/m1/TrashAPI/TrashAPI/swagger.json", "swagger.json")
-
 
 DATASET_COMPOSTABLE = "DATASET_TRASH/dataset_compostable.csv"
 DATASET_RECYCLABLE = "DATASET_TRASH/dataset_recyclable.csv"
