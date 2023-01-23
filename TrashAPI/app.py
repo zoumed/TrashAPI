@@ -6,9 +6,26 @@ import cv2
 from flask_cors import cross_origin , CORS
 import pandas as pd
 import tensorflow as tf
+from flask_swagger_ui import get_swaggerui_blueprint
+
+
+
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
+
+### swagger specific ###
+SWAGGER_URL = '/swagger'
+API_URL = '/static/swagger.json'
+SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "Classification de déchets à la ville de Paris"
+    }
+)
+app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
+### end swagger specific ###
 
 
 loaded_model = tf.keras.models.load_model('best_weights.hdf5')
@@ -21,6 +38,11 @@ app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 1
 def main():
     return render_template('index.html')
 
+from flask import send_from_directory
+
+@app.route("/swagger.json")
+def serve_swagger_file():
+    return send_from_directory("/home/mohammed/m1/TrashAPI/TrashAPI/swagger.json", "swagger.json")
 
 
 DATASET_COMPOSTABLE = "DATASET_TRASH/dataset_compostable.csv"
@@ -83,6 +105,3 @@ def load_img():
 
 if __name__ == '__main__':
     app.run(debug=False,host='0.0.0.0')
-    
-    
-   

@@ -1,0 +1,90 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API Title",
+        "description": "API Description",
+        "version": "1.0.0"
+    },
+    "host": "localhost:5000",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/tri": {
+            "post": {
+                "tags": [
+                    "trash classification"
+                ],
+                "summary": "Classify trash",
+                "description": "This endpoint receives an image and a code postal and returns the type of trash",
+                "operationId": "classify_trash",
+                "parameters": [
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image file",
+                        "required": true,
+                        "type": "file"
+                    },
+                    {
+                        "name": "code",
+                        "in": "formData",
+                        "description": "code postal of the user",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "colorTrash": {
+                                    "type": "string",
+                                    "description": "color of trash"
+                                },
+                                "probability": {
+                                    "type": "number"
+                                },
+                                "typeTrash": {
+                                    "type": "string",
+                                    "description": "type of trash"
+                                },
+                                "adresses": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "description": "list of adresses of recycling centers"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid code postal"
+                    }
+                }
+            }
+        }
+    },
+    "/load_img": {
+        "get": {
+            "tags": [
+                "image loading"
+            ],
+            "summary": "Load the last uploaded image",
+            "description": "This endpoint returns the last uploaded image",
+            "operationId": "load_img",
+            "responses": {
+                "200": {
+                    "description": "Successful operation",
+                    "schema": {
+                        "type": "file"
+                    }
+                }
+            }
+        }
+    }
+}
