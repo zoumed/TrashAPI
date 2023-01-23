@@ -39,7 +39,9 @@ def main():
     return render_template('index.html')
 
 
+
 DATASET_COMPOSTABLE = "DATASET_TRASH/dataset_compostable.csv"
+DATASET_COMPOSTABLE_COULEURS = "DATASET_TRASH/dataset_compostable2.csv"
 DATASET_RECYCLABLE = "DATASET_TRASH/dataset_recyclable.csv"
 
 # Tri
@@ -64,23 +66,28 @@ def home():
     COUNT += 1
     print(preds)
     print(preds_y)
+
+    code = request.form.get("code")
+    if not code:
+        return jsonify({"error": "Code postal manquant"})
+
+    if isinstance(code, str):
+        code = int(code)
     if float(preds) > 0.5:
         poubelle = 'yellow'
         message = 'recyclable'
         preds = preds
         dataset = pd.read_csv(DATASET_RECYCLABLE)
     else:
-        poubelle = 'black'
+        dataset_couleur = pd.read_csv(DATASET_COMPOSTABLE_COULEURS)
+        dataset_couleur["Code postal"] = dataset_couleur["Code postal"].astype(str).str.replace(".", "").astype(int)
+        if code in set(dataset_couleur["Code postal"]):
+            poubelle = list(dataset_couleur[dataset_couleur["Code postal"] == code]["couleur"])[0]
+        else:
+            poubelle = "not found"
         message = 'organic'
         preds = preds_y
         dataset = pd.read_csv(DATASET_COMPOSTABLE)
-
-    code = request.form.get("code")
-    if not code:
-        return jsonify({"error": "Code postal manquant"})
-    
-    if isinstance(code, str):
-        code = int(code)
     
     dataset["Code postal"] = dataset["Code postal"].astype(str).str.replace(".", "").astype(int)
     if code in set(dataset["Code postal"]):
